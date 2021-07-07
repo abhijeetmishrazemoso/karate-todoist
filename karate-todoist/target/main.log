@@ -1,0 +1,469 @@
+20:48:17.220 karate.env system property was:  
+20:48:17.514 request:
+1 > GET https://api.todoist.com/rest/v1/projects
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: api.todoist.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+
+20:48:18.901 response time in milliseconds: 1377.76
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 07 Jul 2021 15:18:18 GMT
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 932ff11be8ea9893fe1627fa0b1f3231.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Id: oUMd8Pmlx_7iGMQ0-YbKUdLW1otJBje3BvPAmfIhC3I-q3Brgm7t1A==
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Cache: Miss from cloudfront
+[
+	{
+		"id": 2268708665,
+		"color": 48,
+		"name": "Inbox",
+		"comment_count": 0,
+		"shared": false,
+		"favorite": false,
+		"sync_id": 0,
+		"inbox_project": true,
+		"url": "https://todoist.com/showProject?id=2268708665"
+	},
+	{
+		"id": 2268708666,
+		"order": 1,
+		"color": 48,
+		"name": "Welcome 👋",
+		"comment_count": 0,
+		"shared": false,
+		"favorite": false,
+		"sync_id": 0,
+		"url": "https://todoist.com/showProject?id=2268708666"
+	},
+	{
+		"id": 2268708667,
+		"order": 2,
+		"color": 48,
+		"name": "Try Boards",
+		"comment_count": 0,
+		"shared": false,
+		"favorite": false,
+		"sync_id": 0,
+		"url": "https://todoist.com/showProject?id=2268708667"
+	},
+	{
+		"id": 2269086424,
+		"order": 3,
+		"color": 47,
+		"name": "Groceries List",
+		"comment_count": 0,
+		"shared": false,
+		"favorite": false,
+		"sync_id": 0,
+		"url": "https://todoist.com/showProject?id=2269086424"
+	},
+	{
+		"id": 2269086435,
+		"order": 4,
+		"color": 47,
+		"name": "Videos Ideas list",
+		"comment_count": 0,
+		"shared": false,
+		"favorite": false,
+		"sync_id": 0,
+		"url": "https://todoist.com/showProject?id=2269086435"
+	}
+]
+
+
+20:48:18.936 karate.env system property was:  
+20:48:18.943 request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+1 > Connection: Keep-Alive
+1 > Content-Length: 25
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.todoist.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{"name":"Groceries List"}
+
+20:48:20.089 response time in milliseconds: 1144.98
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 207
+1 < Content-Type: application/json
+1 < Date: Wed, 07 Jul 2021 15:18:19 GMT
+1 < Via: 1.1 78ca6cf79543bb91c755728d3f2d68b7.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Id: mbROcyzQH-n6QEsAwphWk-gCRyHNRwY4hexxW4gQjv0wXTJvNB3C9g==
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Cache: Miss from cloudfront
+{
+	"id": 2269086895,
+	"order": 5,
+	"color": 47,
+	"name": "Groceries List",
+	"comment_count": 0,
+	"shared": false,
+	"favorite": false,
+	"sync_id": 0,
+	"url": "https://todoist.com/showProject?id=2269086895"
+}
+
+
+20:48:20.108 request:
+2 > POST https://api.todoist.com/rest/v1/tasks
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+2 > Connection: Keep-Alive
+2 > Content-Length: 50
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: api.todoist.com
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{"content":"Buy Potatoes","project_id":2269086895}
+
+20:48:21.237 response time in milliseconds: 1127.08
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Length: 332
+2 < Content-Type: application/json
+2 < Date: Wed, 07 Jul 2021 15:18:20 GMT
+2 < Via: 1.1 b7fde7e4bbff47f56c1ac41dc2b643e2.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Id: hkm2OpVlZ8TOZAcQipCk8qhjlUBqjhwdLgHBiKAqnCTGFDFB1Oul7A==
+2 < X-Amz-Cf-Pop: HYD50-C1
+2 < X-Cache: Miss from cloudfront
+{
+	"id": 4972322677,
+	"assigner": 0,
+	"project_id": 2269086895,
+	"section_id": 0,
+	"order": 1,
+	"content": "Buy Potatoes",
+	"description": "",
+	"completed": false,
+	"label_ids": [],
+	"priority": 1,
+	"comment_count": 0,
+	"creator": 34548280,
+	"created": "2021-07-07T15:18:20Z",
+	"url": "https://todoist.com/showTask?id=4972322677"
+}
+
+
+20:48:21.268 request:
+3 > DELETE https://api.todoist.com/rest/v1/tasks/4972322677
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+3 > Connection: Keep-Alive
+3 > Content-Type: application/json
+3 > Host: api.todoist.com
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+
+20:48:22.223 response time in milliseconds: 952.71
+3 < 204
+3 < Connection: keep-alive
+3 < Date: Wed, 07 Jul 2021 15:18:21 GMT
+3 < Via: 1.1 86154f2ffb271b0606c3dad147e9b0eb.cloudfront.net (CloudFront)
+3 < X-Amz-Cf-Id: A7fhtUou7FeudK8ZPa7CEmCUNIhjdvjxdbuy_q0mKcTp8XK11alULA==
+3 < X-Amz-Cf-Pop: HYD50-C1
+3 < X-Cache: Miss from cloudfront
+
+20:48:22.235 karate.env system property was:  
+20:48:22.240 request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+1 > Connection: Keep-Alive
+1 > Content-Length: 24
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.todoist.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{"name":"Shopping List"}
+
+20:48:22.951 response time in milliseconds: 709.89
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 206
+1 < Content-Type: application/json
+1 < Date: Wed, 07 Jul 2021 15:18:22 GMT
+1 < Via: 1.1 09572547316fecd2c2bcf4edc118f759.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Id: 5EM2FAM6kvdxLS9ANkhmflxVuXNGuzjo1ABPRDjDfiZpIWRyKuYJwg==
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Cache: Miss from cloudfront
+{
+	"id": 2269086896,
+	"order": 6,
+	"color": 47,
+	"name": "Shopping List",
+	"comment_count": 0,
+	"shared": false,
+	"favorite": false,
+	"sync_id": 0,
+	"url": "https://todoist.com/showProject?id=2269086896"
+}
+
+
+20:48:22.971 request:
+2 > POST https://api.todoist.com/rest/v1/tasks
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+2 > Connection: Keep-Alive
+2 > Content-Length: 47
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: api.todoist.com
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{"content":"Buy Bread","project_id":2269086896}
+
+20:48:24.185 response time in milliseconds: 1211.72
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Length: 329
+2 < Content-Type: application/json
+2 < Date: Wed, 07 Jul 2021 15:18:23 GMT
+2 < Via: 1.1 40c23085497f2c1d2144b309a98cb76f.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Id: hz3kvb8hvn1aQFIrUQnfp-Uvci-Cr20kqlcHz20A2_CgQheGCgmtxA==
+2 < X-Amz-Cf-Pop: HYD50-C1
+2 < X-Cache: Miss from cloudfront
+{
+	"id": 4972322808,
+	"assigner": 0,
+	"project_id": 2269086896,
+	"section_id": 0,
+	"order": 1,
+	"content": "Buy Bread",
+	"description": "",
+	"completed": false,
+	"label_ids": [],
+	"priority": 1,
+	"comment_count": 0,
+	"creator": 34548280,
+	"created": "2021-07-07T15:18:23Z",
+	"url": "https://todoist.com/showTask?id=4972322808"
+}
+
+
+20:48:24.191 request:
+3 > POST https://api.todoist.com/rest/v1/tasks/4972322808
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+3 > Connection: Keep-Alive
+3 > Content-Length: 25
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: api.todoist.com
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{"due_string":"tomorrow"}
+
+20:48:24.798 response time in milliseconds: 606.18
+3 < 204
+3 < Connection: keep-alive
+3 < Date: Wed, 07 Jul 2021 15:18:24 GMT
+3 < Via: 1.1 d5fe4a337f81c31dfbd7cacc73d494e1.cloudfront.net (CloudFront)
+3 < X-Amz-Cf-Id: pUT2493KSebPv5PBsthltBnIJwiwH3GNCgUzs8-MVQL3Jf-qBPVueQ==
+3 < X-Amz-Cf-Pop: HYD50-C1
+3 < X-Cache: Miss from cloudfront
+
+20:48:24.804 request:
+4 > DELETE https://api.todoist.com/rest/v1/projects/2269086896
+4 > Accept-Encoding: gzip,deflate
+4 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+4 > Connection: Keep-Alive
+4 > Content-Type: application/json
+4 > Host: api.todoist.com
+4 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+
+20:48:26.143 response time in milliseconds: 1338.60
+4 < 204
+4 < Connection: keep-alive
+4 < Date: Wed, 07 Jul 2021 15:18:25 GMT
+4 < Via: 1.1 299b62497e6a9b863789e84f15fc9512.cloudfront.net (CloudFront)
+4 < X-Amz-Cf-Id: 0ufPtTyD0IADe73GnswrRxhvZSGVlPg5HqSY3Nj0MD00CGDRSvp3CQ==
+4 < X-Amz-Cf-Pop: HYD50-C1
+4 < X-Cache: Miss from cloudfront
+
+20:48:26.169 karate.env system property was:  
+20:48:26.174 request:
+1 > POST https://api.todoist.com/rest/v1/projects
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+1 > Connection: Keep-Alive
+1 > Content-Length: 28
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.todoist.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{"name":"Videos Ideas list"}
+
+20:48:27.665 response time in milliseconds: 1489.95
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 210
+1 < Content-Type: application/json
+1 < Date: Wed, 07 Jul 2021 15:18:27 GMT
+1 < Via: 1.1 549991143dcc2dc81f07c392b2502e04.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Id: oK8_yP7QV4sFrQ8K4AnbE6tiRhO-ivSlqgrYUzE4P8UA9UiDDqxRSg==
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Cache: Miss from cloudfront
+{
+	"id": 2269086906,
+	"order": 6,
+	"color": 47,
+	"name": "Videos Ideas list",
+	"comment_count": 0,
+	"shared": false,
+	"favorite": false,
+	"sync_id": 0,
+	"url": "https://todoist.com/showProject?id=2269086906"
+}
+
+
+20:48:27.676 request:
+2 > POST https://api.todoist.com/rest/v1/tasks
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+2 > Connection: Keep-Alive
+2 > Content-Length: 57
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: api.todoist.com
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{"content":"How to excel chess!","project_id":2269086906}
+
+20:48:29.100 response time in milliseconds: 1422.20
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Length: 339
+2 < Content-Type: application/json
+2 < Date: Wed, 07 Jul 2021 15:18:28 GMT
+2 < Via: 1.1 40c23085497f2c1d2144b309a98cb76f.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Id: g_lI4XufFcs4PpkFPPu6ZjdUiCMhicikWVES5KMDps1iR4bXMzzZYA==
+2 < X-Amz-Cf-Pop: HYD50-C1
+2 < X-Cache: Miss from cloudfront
+{
+	"id": 4972323045,
+	"assigner": 0,
+	"project_id": 2269086906,
+	"section_id": 0,
+	"order": 1,
+	"content": "How to excel chess!",
+	"description": "",
+	"completed": false,
+	"label_ids": [],
+	"priority": 1,
+	"comment_count": 0,
+	"creator": 34548280,
+	"created": "2021-07-07T15:18:28Z",
+	"url": "https://todoist.com/showTask?id=4972323045"
+}
+
+
+20:48:29.110 request:
+3 > POST https://api.todoist.com/rest/v1/tasks/4972323045/close
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+3 > Connection: Keep-Alive
+3 > Content-Length: 2
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: api.todoist.com
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{}
+
+20:48:30.741 response time in milliseconds: 1630.29
+3 < 204
+3 < Connection: keep-alive
+3 < Date: Wed, 07 Jul 2021 15:18:29 GMT
+3 < Via: 1.1 299b62497e6a9b863789e84f15fc9512.cloudfront.net (CloudFront)
+3 < X-Amz-Cf-Id: Vc-0dBsBNGfVQwcGWscrThyUGF0ZLjJvYwGbFz5-kJR77xjFBcm2fQ==
+3 < X-Amz-Cf-Pop: HYD50-C1
+3 < X-Cache: Miss from cloudfront
+
+20:48:30.750 request:
+4 > POST https://api.todoist.com/rest/v1/tasks/4972323045/reopen
+4 > Accept-Encoding: gzip,deflate
+4 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+4 > Connection: Keep-Alive
+4 > Content-Length: 2
+4 > Content-Type: application/json; charset=UTF-8
+4 > Host: api.todoist.com
+4 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{}
+
+20:48:31.967 response time in milliseconds: 1215.92
+4 < 204
+4 < Connection: keep-alive
+4 < Date: Wed, 07 Jul 2021 15:18:31 GMT
+4 < Via: 1.1 5c49044a9bbc82066ce04ae597e1a6a7.cloudfront.net (CloudFront)
+4 < X-Amz-Cf-Id: nR1STK2fzjqqZ4Kg0ERqQqGYNN-P3_PwKWTLi_Jof4hgeqVrOQZnEA==
+4 < X-Amz-Cf-Pop: HYD50-C1
+4 < X-Cache: Miss from cloudfront
+
+20:48:32.097 karate.env system property was:  
+20:48:32.101 request:
+1 > POST https://api.todoist.com/rest/v1/labels
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+1 > Connection: Keep-Alive
+1 > Content-Length: 18
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.todoist.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{"name":"Regular"}
+
+20:48:32.978 response time in milliseconds: 875.45
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 89
+1 < Content-Type: application/json
+1 < Date: Wed, 07 Jul 2021 15:18:32 GMT
+1 < Via: 1.1 f171ab091c8a5c56a9c13ec1befacf99.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Id: G_Pg87hkbs1GLsoGjr3Czr5-cAimwSikaHqAqIowtjYEYQbNxmmOeQ==
+1 < X-Amz-Cf-Pop: HYD50-C1
+1 < X-Cache: Miss from cloudfront
+{
+	"id": 2157484345,
+	"name": "Regular",
+	"order": 1,
+	"color": 47,
+	"favorite": false
+}
+
+
+20:48:32.985 request:
+2 > POST https://api.todoist.com/rest/v1/labels/2157484345
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+2 > Connection: Keep-Alive
+2 > Content-Length: 18
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: api.todoist.com
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+{"name":"Special"}
+
+20:48:33.849 response time in milliseconds: 862.56
+2 < 204
+2 < Connection: keep-alive
+2 < Date: Wed, 07 Jul 2021 15:18:33 GMT
+2 < Via: 1.1 40c23085497f2c1d2144b309a98cb76f.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Id: RSQKgrpg3hOaf4DPKhDDfV-h5BzA2MYYxpoFnpx8cM0k7Mxc-oYybA==
+2 < X-Amz-Cf-Pop: HYD50-C1
+2 < X-Cache: Miss from cloudfront
+
+20:48:33.854 request:
+3 > DELETE https://api.todoist.com/rest/v1/labels/2157484345
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer 5db33544a0b5c9ad53aa61d185670ed79ed24467
+3 > Connection: Keep-Alive
+3 > Content-Type: application/json
+3 > Host: api.todoist.com
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_292)
+
+20:48:35.019 response time in milliseconds: 1164.04
+3 < 204
+3 < Connection: keep-alive
+3 < Date: Wed, 07 Jul 2021 15:18:34 GMT
+3 < Via: 1.1 b72519ee5ed84e4e3db077b5b7e93d38.cloudfront.net (CloudFront)
+3 < X-Amz-Cf-Id: PmlYTzukEpLdzr3me-07TwGi6uo8ntKK8a9rJPBg0H-VMyrPUAFF0g==
+3 < X-Amz-Cf-Pop: HYD50-C1
+3 < X-Cache: Miss from cloudfront
+
+t
+
